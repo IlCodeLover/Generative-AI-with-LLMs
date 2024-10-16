@@ -24,6 +24,25 @@ Generative AI use cases, project lifecycle, and model pre-training
 
 [Week 1 quiz](https://github.com/Ryota-Kawamura/Generative-AI-with-LLMs/blob/main/Week-1/Week-1_Quiz.md)
 
+```bash
+# download notebook Lab_1_summarize_dialogue to your studio
+aws s3 cp --recursive s3://dlai-generative-ai/labs/w1-549876/ ./
+```
+#### Dataset Lab1: 
+https://huggingface.co/datasets/knkarthick/dialogsum
+In paper: We collect dialogue data for DialogSum from three public dialogue corpora, namely Dailydialog (Li et al., 2017), DREAM (Sun et al., 2019) and MuTual (Cui et al., 2019), as well as an English speaking practice website. These datasets contain face-to-face spoken dialogues that cover a wide range of daily-life topics, including schooling, work, medication, shopping, leisure, travel. Most conversations take place between friends, colleagues, and between service providers and customers.
+
+#### Data Fields
+- dialogue: text of dialogue.
+- summary: human written summary of the dialogue.
+- topic: human written topic/one liner of the dialogue.
+- id: unique file id of an example.
+
+#### Data Splits
+- train: 12460
+- val: 500
+- test: 1500
+- holdout: 100 [Only 3 features: id, dialogue, topic]
 ## Week 2
 Fine-tuning and evaluating large language models
 
